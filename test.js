@@ -67,29 +67,5 @@ function keySelect(apikeys) {
 
 }
 
-class bypasser{
-    constructor(options){
-        this.options = {
-        }
-
-        this.keys = this.options.keys
-        this.rate = this.options.rate
-    }
-
-    assignOptions(options = {}){
-
-        let defaults = {
-            keys: [],
-            rate: {
-                requests: 1,
-                time: 1, // Define Rate Limit
-            }
-        };
-
-        let actual = Object.assign({}, defaults, options);
-        console.info( actual.keys );
-    }
-
-}
-
 apikeys = ['key1', 'key2', 'key3']
+keySelect(apikeys)
